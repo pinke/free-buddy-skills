@@ -28,14 +28,7 @@ def fetch_free_models(url="https://opencode.ai/zen/v1/models"):
         req = urllib.request.Request(url)
         req.add_header("User-Agent", "FreeBuddySkills/1.0")
         
-        # 创建 SSL context (处理证书验证问题)
-        # 注意: 某些系统可能需要禁用 SSL 验证
-        try:
-            context = ssl.create_default_context()
-            context.check_hostname = False
-            context.verify_mode = ssl.CERT_NONE
-        except Exception:
-            context = None
+        context = ssl.create_default_context()
         
         with urllib.request.urlopen(req, timeout=10, context=context) as response:
             data = json.loads(response.read().decode("utf-8"))

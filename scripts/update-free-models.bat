@@ -5,7 +5,7 @@ REM 用法: update-free-models.bat
 setlocal enabledelayedexpansion
 
 set "MODELS_FILE=%USERPROFILE%\.workbuddy\models.json"
-set "OPENCEND_URL=https://opencode.ai/zen/v1/models"
+set "OPencode_URL=https://opencode.ai/zen/v1/models"
 
 echo.
 echo 🔍 正在查询 opencode.ai 免费模型...
@@ -27,7 +27,7 @@ if %errorlevel% neq 0 (
 )
 
 REM 获取免费模型列表
-for /f "delims=" %%i in ('curl -sS "%OPENCEND_URL%" ^| jq -r ".data[].id" ^| findstr /i "free"') do (
+for /f "delims=" %%i in ('curl -sS "%OPencode_URL%" ^| jq -r ".data[].id" ^| findstr /i "free"') do (
     set "FREE_MODELS=!FREE_MODELS! %%i"
 )
 

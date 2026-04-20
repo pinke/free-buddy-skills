@@ -4,12 +4,12 @@
 # 用法: ./update-free-models.sh
 
 MODELS_FILE="$HOME/.workbuddy/models.json"
-OPENCEND_URL="https://opencode.ai/zen/v1/models"
+OPencode_URL="https://opencode.ai/zen/v1/models"
 
 echo "🔍 正在查询 opencode.ai 免费模型..."
 
 # 获取免费模型列表
-FREE_MODELS=$(curl -sS "$OPENCEND_URL" | jq -r '.data[].id' | grep -i free)
+FREE_MODELS=$(curl -sS "$OPencode_URL" | jq -r '.data[].id' | grep -i free)
 
 if [ -z "$FREE_MODELS" ]; then
     echo "❌ 未找到免费模型或 API 不可用"
