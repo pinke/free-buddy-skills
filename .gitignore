@@ -1,3 +1,6 @@
+# Git
+.git/
+
 # Python
 __pycache__/
 *.py[cod]

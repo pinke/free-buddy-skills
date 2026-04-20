@@ -50,7 +50,7 @@ WorkBuddy 会自动:
 
 ## 使用流程
 
-### 方法 1: 使用跨平台 Python 脚本 (推荐)
+### 方法 1: 使用 Python 脚本 (推荐)
 
 ```bash
 # 所有平台通用 (macOS / Linux / Windows)
@@ -59,24 +59,7 @@ python3 update-free-models.py
 python update-free-models.py
 ```
 
-### 方法 2: 使用平台专用脚本
-
-**macOS / Linux:**
-```bash
-./update-free-models.sh
-```
-
-**Windows (PowerShell 推荐):**
-```powershell
-powershell -ExecutionPolicy Bypass -File update-free-models.ps1
-```
-
-**Windows (CMD):**
-```cmd
-update-free-models.bat
-```
-
-### 方法 3: 手动查询和配置
+### 方法 2: 手动配置
 
 #### 步骤 1: 查询可用免费模型
 

@@ -67,14 +67,7 @@ git clone https://github.com/pinke/free-buddy-skills.git
 ## 手动运行
 
 ```bash
-# 跨平台 (推荐)
 python3 update-free-models.py
-
-# Windows PowerShell
-powershell -ExecutionPolicy Bypass -File update-free-models.ps1
-
-# macOS / Linux
-./update-free-models.sh
 ```
 
 ## 配置位置
