@@ -93,7 +93,7 @@ curl -sS https://opencode.ai/zen/v1/models | jq '.data[] | select(.id | contains
   "name": "模型显示名称",
   "vendor": "OpenCode AI",
   "url": "https://opencode.ai/zen/v1/chat/completions",
-  "apiKey": "public",
+  "apiKey": "使用 public (无需真实密钥)",
   "maxInputTokens": 262144,
   "supportsToolCall": true,
   "supportsImages": false,
