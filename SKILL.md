@@ -1,6 +1,6 @@
 ---
 title: "Free Buddy Skills"
-summary: "一键配置 opencode.ai 免费 AI 模型到 WorkBuddy"
+summary: "一键配置 opencode.ai 免费 AI 模型到 WorkBuddy,无需 API Key"
 read_when:
   - 用户需要配置免费 AI 模型
   - 用户提到"免费模型"、"opencode"、"free model"
@@ -27,6 +27,12 @@ read_when:
 1. **查询免费模型**: 从 opencode.ai 获取最新的免费模型列表
 2. **自动配置**: 将免费模型添加到 `~/.workbuddy/models.json`
 3. **定期更新**: 保持模型配置的时效性
+
+## 权限说明
+
+- **无需 API Key**: 使用公开的 `"public"` 作为 API Key
+- **无需认证**: opencode.ai 免费模型无需登录
+- **仅本地操作**: 只读取和写入本地的 `~/.workbuddy/models.json`
 
 ## 快速使用
 
