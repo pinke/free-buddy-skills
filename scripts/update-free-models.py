@@ -193,7 +193,7 @@ def main():
         try:
             response = input("是否添加这些模型? (y/n): ").strip().lower()
         except EOFError:
-            response = "y"  # 非交互模式默认添加
+            response = "n"  # 非交互模式默认取消,避免自动修改用户配置
         
         if response == "y":
             for model in new_models:

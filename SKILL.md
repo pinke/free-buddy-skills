@@ -117,5 +117,5 @@ curl -sS https://opencode.ai/zen/v1/models | jq '.data[] | select(.id | contains
 
 1. opencode.ai 的免费模型使用 `"public"` 作为 API Key
 2. 所有免费模型共享同一个端点: `https://opencode.ai/zen/v1/chat/completions`
-3. 建议定期检查模型列表是否有更新
-4. 如果模型配置已存在,不要重复添加
+3. 脚本需要用户确认后才会修改配置文件
+4. 非交互模式下运行将跳过自动添加,需手动确认
